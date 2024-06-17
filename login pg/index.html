@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/adaa6ddddc.js" crossorigin="anonymous"></script>
+    <title>Login to MAYBELLINE WEBSITE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <!--<li><a href="#home" onclick="showHome()">Home</a></li> -->
+            <li><a href="#products" onclick="showProducts()">Products</a></li>
+            <li><a href="#stories">Stories</a></li>
+            <li><a href="#aboutus" onclick="showAboutUs()">About Us</a></li>
+        </ul>
+    </nav>
+    <!--
+
+    <div class="home-page" id="homePage">
+        <h1>Welcome to Maybelline</h1>
+        <div class="auth-options">
+            <button class="btn" onclick="showLogin()">Login</button>
+            <button class="btn" onclick="showSignup()">Sign Up</button>
+        </div>
+    </div> -->
+
+    <div class="container" id="loginContainer" >
+        <h1>Maybelline Login</h1>
+        <div class="box">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <input type="text" name="email" id="email" placeholder="Enter Your Email">
+        </div>
+        <div class="box">
+            <i class="fa fa-key" aria-hidden="true"></i>
+            <input type="password" name="password" id="password" placeholder="Enter Your Password">
+        </div>
+        <button class="btn" onclick="login()">Sign In</button>
+        <p>Don't have an account? <a href="#" onclick="showSignup()">Sign Up</a></p>
+    </div>
+
+    <div class="container" id="signupContainer" style="display:none;">
+        <h1>Sign Up</h1>
+        <div class="box">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <input type="text" name="email" id="signupEmail" placeholder="Enter Your Email">
+        </div>
+        <div class="box">
+            <i class="fa fa-key" aria-hidden="true"></i>
+            <input type="password" name="password" id="signupPassword" placeholder="Enter Your Password">
+        </div>
+        <div class="box">
+            <i class="fa fa-key" aria-hidden="true"></i>
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Your Password">
+        </div>
+        <button class="btn" onclick="signup()">Sign Up</button>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
+
+    <div id="aboutUsContainer" style="display:none;">
+        <h1>About Us</h1>
+        <p>Maybelline is a well-known American cosmetics brand that was founded in 1915 by Thomas Lyle Williams. The brand's first product was inspired by a homemade mascara mixture used by Williams' sister, Mabel. Over the years, Maybelline has grown significantly and was acquired by L'Oréal in 1996, becoming part of one of the world's largest beauty companies.</p>
+        <p>Maybelline's mission is to provide innovative, affordable, and easy-to-use beauty products that inspire confidence and self-expression. Their extensive product range includes foundations, mascaras, lipsticks, nail polishes, and skincare items, making beauty accessible to everyone. Known for its iconic slogan, "Maybe she's born with it. Maybe it's Maybelline," the brand has a strong global presence and is available in over 120 countries.</p>
+        <p>The brand values inclusivity, innovation, and sustainability. Maybelline strives to cater to diverse skin tones and types, continuously develops new products with the latest technology, and is committed to reducing its environmental impact. Maybelline is also active in empowering individuals and communities through various campaigns and supports charitable causes related to women's rights and health.</p>
+        <p>For more information, you can visit their official website.</p>
+    </div>
+
+    <div id="productsContainer" style="display:none;">
+        <h1>Our Products</h1>
+        <div class="product-list">
+            <div class="product-item">
+                <h2>Fit Me Foundation</h2>
+                <p>A lightweight foundation that provides natural coverage for a flawless finish.</p>
+            </div>
+            <div class="product-item">
+                <h2>Lash Sensational Mascara</h2>
+                <p>Get full, fanned-out lashes with our best-selling mascara.</p>
+            </div>
+            <div class="product-item">
+                <h2>Superstay Matte Ink Lipstick</h2>
+                <p>Long-lasting, highly pigmented liquid lipstick with a matte finish.</p>
+            </div>
+            <div class="product-item">
+                <h2>Master Chrome Highlighter</h2>
+                <p>Achieve a radiant glow with our metallic highlighter.</p>
+            </div>
+            <div class="product-item">
+                <h2>City Mini Eyeshadow Palette</h2>
+                <p>A compact eyeshadow palette with a range of vibrant colors.</p>
+            </div>
+            <div class="product-item">
+                <h2>Dream Urban Cover Foundation</h2>
+                <p>Full coverage foundation with SPF 50, perfect for urban life.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
